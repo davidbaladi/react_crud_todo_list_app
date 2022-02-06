@@ -8,9 +8,11 @@ VSCode Instructions:
 *Any edits to index.js requires reloading or nodemon installation for hot-reloading
 
 (Dependencies)
+
 3) npm install express
 4) npm install cors
 5) npm install body-parser
 
 (Launching Application)
+
 6) npm start (in new terminal while server still running in background)
