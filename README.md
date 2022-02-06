@@ -4,7 +4,8 @@ VSCode Instructions:
 
 (Instructions to run server)
 1) cd into /server
-2) run "node index.js" to start machine local server
+2) run "node index.js" to start machine local 
+
 *Any edits to index.js requires reloading or nodemon installation for hot-reloading
 
 (Dependencies)
