@@ -2,9 +2,15 @@ CRUD application that utilizes Node and Express to store and send to-do list ite
 
 VSCode Instructions:
 
-1) npm install express
-2) node .  index.js   (starts machine-based server)
-//npm install cors
-//npm install body-parser
+(Instructions to run server)
+1) cd into /server
+2) run "node index.js" to start machine local server
+*Any edits to index.js requires reloading or nodemon installation for hot-reloading
 
-//have both client (App) and server running
+(Dependencies)
+3) npm install express
+4) npm install cors
+5) npm install body-parser
+
+(Launching Application)
+6) npm start (in new terminal while server still running in background)
