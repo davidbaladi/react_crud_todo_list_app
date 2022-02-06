@@ -1,6 +1,6 @@
 CRUD application that utilizes Node and Express to store and send to-do list items.
 
-VSCode Instructions:
+VSCode Terminal Instructions:
 
 (Instructions to run server)
 1) cd into /server
