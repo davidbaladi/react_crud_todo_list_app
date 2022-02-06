@@ -1,0 +1,132 @@
+.todo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0px;
+  color: #fff;
+  background: linear-gradient(
+    -60deg,
+    rgba(255, 118, 20, 1) 20%,
+    rgba(255, 224, 17, 1) 100%
+  );
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+
+  button {
+    box-shadow: 0.5px 0.5px #161a2b;
+    color: #fff;
+    background: linear-gradient(
+      -30deg,
+      rgba(255, 168, 80, 1) 40%,
+      rgba(255, 224, 17, 1) 100%
+    );
+  }
+
+  p {
+    cursor: pointer;
+    &:hover {
+      filter: brightness(90%);
+    }
+    margin: 8px 8px 8px 16px;
+    padding-right: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+    max-height: 92px;
+  }
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  &:nth-child(4n + 1) {
+    background: linear-gradient(
+      -60deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 100, 250, 1) 100%
+    );
+    button {
+      background: linear-gradient(
+        30deg,
+        rgba(155, 0, 250, 1) 0%,
+        rgba(93, 12, 255, 1) 40%
+      );
+    }
+  }
+  &:nth-child(4n + 2) {
+    background: linear-gradient(
+      -60deg,
+      rgba(255, 12, 241, 1) 0%,
+      rgba(250, 100, 135, 1) 100%
+    );
+
+    button {
+      background: linear-gradient(
+        30deg,
+        rgba(255, 12, 241, 1) 0%,
+        rgba(250, 100, 135, 1) 40%
+      );
+    }
+  }
+  &:nth-child(4n + 3) {
+    background: linear-gradient(
+      -60deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(117, 122, 255, 1) 100%
+    );
+    button {
+      background: linear-gradient(
+        30deg,
+        rgba(20, 159, 255, 1) 0%,
+        rgba(17, 122, 255, 1) 40%
+      );
+    }
+  }
+
+  .button-options {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .checkbox {
+      cursor: pointer;
+      &:hover {
+        filter: brightness(110%);
+      }
+      background-color: #1ce380;
+      padding: 6px 8px;
+      font-size: 20px;
+      border-radius: 0px 5px 0px 0px;
+      transition: 1s ease-in-out;
+      .checked:hover {
+        transform: rotateY(360deg);
+        transition: 1.5s ease-in-out;
+      }
+      .unchecked:hover {
+        transform: rotateX(180deg);
+        transition: 0.8s ease-in-out;
+      }
+    }
+    .edit-todo-button {
+      cursor: pointer;
+      &:hover {
+        filter: brightness(106%);
+        transition: 1s ease-in-out;
+      }
+      background-color: #1ce3dd;
+      font-size: 20px;
+      padding: 6px 8px;
+    }
+    .delete-todo-button {
+      cursor: pointer;
+      &:hover {
+        filter: brightness(115%);
+        transition: 1s ease-in-out;
+      }
+      background-color: #ff6f47;
+      font-size: 20px;
+      padding: 6px 8px;
+      border-radius: 0px 0px 5px 0px;
+    }
+  }
+}

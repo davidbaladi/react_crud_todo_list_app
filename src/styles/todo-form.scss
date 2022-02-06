@@ -1,0 +1,80 @@
+.add-todo-form {
+  width: 100%;
+
+  .add-todo {
+    width: 100%;
+    margin-bottom: 6px;
+    .add-todo-input {
+      outline: none;
+      width: 66%;
+      padding: 8px 0px 8px 8px;
+      border-radius: 4px 0 0 4px;
+      border: 2px solid #5d0cff;
+      background: transparent;
+      color: #fff;
+      &::placeholder {
+        color: #b2b2b2;
+      }
+      &:focus {
+        color: white;
+      }
+    }
+    .add-todo-button {
+      outline: none;
+      width: 34%;
+      &:hover {
+        filter: brightness(110%);
+      }
+      cursor: pointer;
+      padding: 8px 0px;
+      border: 2px solid #5d0cff;
+      border-radius: 0px 4px 4px 0px;
+      color: #fff;
+      background: linear-gradient(
+        90deg,
+        rgba(93, 12, 255, 1) 0%,
+        rgba(155, 0, 250, 1) 100%
+      );
+    }
+  }
+
+  .edit-todo {
+    width: 100%;
+    .edit-todo-input {
+      color: #fff;
+      outline: none;
+      width: 66%;
+      &:hover {
+        filter: brightness(150%);
+      }
+      padding: 8px 8px 8px 8px;
+      border-radius: 4px 0 0 4px;
+      border: 2px solid #5d0cff;
+      background: transparent;
+      &::placeholder {
+        color: #b2b2b2;
+      }
+      &:focus {
+        color: white;
+      }
+    }
+
+    .edit-todo-button {
+      cursor: pointer;
+      &:hover {
+        filter: brightness(110%);
+      }
+      outline: none;
+      width: 34%;
+      padding: 8px 0px;
+      border: 2px solid #5d0cff;
+      border-radius: 0px 4px 4px 0px;
+      color: #fff;
+      background: linear-gradient(
+        90deg,
+        rgba(93, 12, 255, 1) 0%,
+        rgba(155, 0, 250, 1) 100%
+      );
+    }
+  }
+}

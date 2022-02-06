@@ -1,0 +1,141 @@
+.todo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 6px 0px;
+  color: #fff;
+  background: linear-gradient(-60deg, #ff7614 20%, #ffe011 100%);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.todo-row button {
+  -webkit-box-shadow: 0.5px 0.5px #161a2b;
+          box-shadow: 0.5px 0.5px #161a2b;
+  color: #fff;
+  background: linear-gradient(-30deg, #ffa850 40%, #ffe011 100%);
+}
+
+.todo-row p {
+  cursor: pointer;
+  margin: 8px 8px 8px 16px;
+  padding-right: 5px;
+  overflow: hidden;
+  overflow-y: auto;
+  word-wrap: break-word;
+  max-height: 92px;
+}
+
+.todo-row p:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.todo-row .completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(-60deg, #5d0cff 0%, #9b64fa 100%);
+}
+
+.todo-row:nth-child(4n + 1) button {
+  background: linear-gradient(30deg, #9b00fa 0%, #5d0cff 40%);
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(-60deg, #ff0cf1 0%, #fa6487 100%);
+}
+
+.todo-row:nth-child(4n + 2) button {
+  background: linear-gradient(30deg, #ff0cf1 0%, #fa6487 40%);
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(-60deg, #149fff 0%, #757aff 100%);
+}
+
+.todo-row:nth-child(4n + 3) button {
+  background: linear-gradient(30deg, #149fff 0%, #117aff 40%);
+}
+
+.todo-row .button-options {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-row .button-options .checkbox {
+  cursor: pointer;
+  background-color: #1ce380;
+  padding: 6px 8px;
+  font-size: 20px;
+  border-radius: 0px 5px 0px 0px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.todo-row .button-options .checkbox:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.todo-row .button-options .checkbox .checked:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+}
+
+.todo-row .button-options .checkbox .unchecked:hover {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.todo-row .button-options .edit-todo-button {
+  cursor: pointer;
+  background-color: #1ce3dd;
+  font-size: 20px;
+  padding: 6px 8px;
+}
+
+.todo-row .button-options .edit-todo-button:hover {
+  -webkit-filter: brightness(106%);
+          filter: brightness(106%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.todo-row .button-options .delete-todo-button {
+  cursor: pointer;
+  background-color: #ff6f47;
+  font-size: 20px;
+  padding: 6px 8px;
+  border-radius: 0px 0px 5px 0px;
+}
+
+.todo-row .button-options .delete-todo-button:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+/*# sourceMappingURL=todo.css.map */

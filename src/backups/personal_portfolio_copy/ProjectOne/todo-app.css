@@ -1,0 +1,74 @@
+.todo-app {
+  margin: 0;
+  padding: 10px 12px 10px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background: linear-gradient(45deg, #c1c2c0 50%, #161a1b 50%);
+  min-height: 90vh;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+
+.todo-app .todo-app-title {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.todo-app .clear-button {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 75%;
+  text-align: center;
+  padding: 8px;
+  border: 2px solid #5d0cff;
+  border-radius: 4px 4px 4px 4px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#5d0cff), color-stop(80%, #9b00fa));
+  background: linear-gradient(90deg, #5d0cff 0%, #9b00fa 80%);
+}
+
+.todo-app .clear-button:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.todo-app ::-webkit-scrollbar {
+  width: 12px;
+}
+
+.todo-app ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(100, 100, 100, 0.8);
+}
+
+.todo-app ::-webkit-scrollbar-thumb {
+  background: inherit;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(100, 100, 100, 0.8);
+  border-radius: 10px;
+}
+
+.todo-app ::-webkit-scrollbar-thumb:hover {
+  border: 1px solid #646464;
+}
+/*# sourceMappingURL=todo-app.css.map */
